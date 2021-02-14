@@ -72,23 +72,23 @@
     "commands": {
       "r": "заменить один символ",
       "J": "присоединить нижнюю строку к текущей",
-      "gJ": "join line below to the current one without space in between",
-      "gwip": "reflow paragraph",
+      "gJ": "соединить строку ниже с текущей без пробела между ними",
+      "gwip": "форматировать параграф (чтобы длина строки была оптимальной)",
       "gTilde": "switch case up to motion",
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "заменить всю строку",
-      "C": "change (replace) to the end of the line",
+      "C": " заменить в конец строки",
       "cDollar": "заменить до конца строки",
-      "ciw": "change (replace) entire word",
+      "ciw": "заменить все слово целиком",
       "cw": "заменить до конца слова",
       "s": "удалить символ и заменить текст",
-      "S": "удалить строку и заменить текст (то же что cc)",
+      "S": "удалить строку и заменить текст (то же, что cc)",
       "xp": "переставить две буквы (удалить и вставить)",
       "u": "отменить",
-      "U": "restore (undo) last changed line",
+      "U": "восстановить (undo) крайнюю измененную строку",
       "CtrlPlusr": "повторить",
-      "dot": "повторить последнюю команду"
+      "dot": "повторить крайнюю команду"
     }
   },
   "markingText": {
@@ -102,13 +102,13 @@
       "aw": "выделить слово",
       "ab": "блок в ()",
       "aB": "блок в {}",
-      "at": "a block with <> tags",
+      "at": "блок с тегами <>",
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
-      "it": "inner block with <> tags",
+      "it": "внутренний блок с тегами <>",
       "Esc": "выйти из режима выделения текста"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "Вместо <kbd>b</kbd> или <kbd>B</kbd> вы можете использовать <kbd>(</kbd> или <kbd>{</kbd> соответственно."
   },
   "visualCommands": {
     "title": "Визуальные команды",
@@ -118,8 +118,8 @@
       "y": "скопировать выделенный текст",
       "d": "удалить выделенный текст",
       "tilde": "переключить регистр",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "изменить регистр выбранного текста на нижний",
+      "U": "изменить регистр выбранного текста на верхний"
     }
   },
   "registers": {
@@ -128,24 +128,24 @@
       "show": "показать содержимое регистров",
       "pasteRegisterX": "вставить содержимое регистра x",
       "yankIntoRegisterX": "поместить содержимое в регистр x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "поместить в регистр системного буфера обмена",
+      "quotePlusp": "вставить из регистра системного буфера обмена"
     },
     "tip1": "Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
+      "0": "крайнее помещение из регистра",
+      "title": "Специальные регистры:",
+      "quote": "безымянный регистр, крайнее удаление или вставка",
+      "percent": "имя текущего файла",
+      "hashtag": "альтернативное имя файла",
+      "asterisk": "содержимое буфера обмена (X11 основной)",
+      "plus": "одержимое буфера обмена (X11 буфер обмена)",
+      "slash": "крайний паттерн поиска",
       "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "dot": "крайний вставленный текст",
+      "minus": "крайнее маленькое (меньше, чем строка) удаление",
+      "equal": "регистр выражений",
+      "underscore": "регистр 'черная дыра'"
     }
   },
   "marks": {
